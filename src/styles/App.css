@@ -1,0 +1,63 @@
+/* Фон сайту */
+body {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0e55649e-5a4b-4c74-8559-a365100f6ca7/deglug4-beb84ad5-6edb-4e3c-aa65-d8b57013599d.jpg/v1/fill/w_1245,h_642,q_70,strp/dnd_party_battle_scene_by_captdiablo_deglug4-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODI1IiwicGF0aCI6IlwvZlwvMGU1NTY0OWUtNWE0Yi00Yzc0LTg1NTktYTM2NTEwMGY2Y2E3XC9kZWdsdWc0LWJlYjg0YWQ1LTZlZGItNGUzYy1hYTY1LWQ4YjU3MDEzNTk5ZC5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.AUckdpyJ9LFMQ-_GOENb6_wifUke0Rd6jLdSi3mC0HI');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Загальні стилі для додатку */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Стилі для хедера */
+.header {
+  background-color: rgba(0, 0, 0, 0.80);
+  color: white;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px;
+  /* Додаємо висоту хедера */
+  box-sizing: border-box;
+}
+
+.nav-link {
+  color: orange;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.header nav {
+  text-align: center;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Стилі для футера */
+.footer {
+  background-color: rgba(0, 0, 0, 0.80);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  /* Додаємо висоту футера */
+  box-sizing: border-box;
+  margin-top: auto;
+  /* Зміщує футер вниз */
+}

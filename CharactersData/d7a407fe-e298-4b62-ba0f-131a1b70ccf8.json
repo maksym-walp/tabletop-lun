@@ -1,0 +1,10 @@
+{
+  "name": "Aragon",
+  "health": 100,
+  "armorClass": 15,
+  "level": 5,
+  "class": "Warrior",
+  "race": "Human",
+  "image": "https://example.com/image.jpg",
+  "id": "d7a407fe-e298-4b62-ba0f-131a1b70ccf8"
+}

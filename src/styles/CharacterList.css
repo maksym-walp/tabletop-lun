@@ -1,0 +1,163 @@
+/* Сторінка зі списком персонажів */
+.character-list-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 20px 10px 0;
+    /* Додаємо верхній відступ */
+    box-sizing: border-box;
+}
+
+/* Список персонажів */
+.character-list {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Розтягує контент на всю ширину */
+}
+
+/* Контейнер для карток персонажів */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 40px;
+    /* Відступ до футера */
+    box-sizing: border-box;
+}
+
+/* Картка персонажа */
+.character-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.character-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Картка додавання персонажа */
+.add-character-card {
+    order: -1;
+    /* Розташовує картку додавання на першій позиції */
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    font-size: 50px;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.add-character-plus {
+    font-weight: bold;
+}
+
+/* Модальне вікно */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Форма додавання персонажа */
+.add-character-form {
+    margin-bottom: 20px;
+}
+
+.add-character-form input {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.export-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.export-button:hover {
+    background-color: #0056b3;
+}
+
+.add-character-form .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.submit-button,
+.import-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.import-button:hover {
+    background-color: #0056b3;
+}
+
+.import-button {
+    display: inline-block;
+    text-align: center;
+}
